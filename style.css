@@ -1,0 +1,27 @@
+body {
+    background-color: black;
+}
+.container {
+    background-color: white;
+}
+.logo{
+    font-size: 2em;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+.nav button{
+    float: right;
+    margin-left: auto;
+    font-size: 1.2em ;
+}
+.btn-secondary {
+    margin-left: 10px !important; 
+}
+
+.btn-outline-secondary {
+    background-color: #ebebeb;
+    color: black;
+    
+}
