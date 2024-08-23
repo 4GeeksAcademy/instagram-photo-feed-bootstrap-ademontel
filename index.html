@@ -13,7 +13,7 @@
 </head>
   <body>
     <div class="container">
-        <div class="nav px-3">
+        <div class="nav px-3 py-2">
             <a class="logo link-secondary link-offset-2 link-underline-opacity-0 link-underline-opacity-0-hover" href="#"><i class="fa-brands fa-instagram"></i> <strong>Instagram</strong></a>
             <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Create a new post</button>
             <div class="btn-group">
@@ -29,59 +29,217 @@
                 </ul>
             </div>
         </div>
-        <hr class="dropdown-divider">
-        <div class="content">
+
+        <!--Prueba de Navs and Tabs de bootstrap 5.2+ NUEVO!!! Pensaba hacerlo con Jquery y usar display: none o algo del estilo. -->
+
+        <div class="position-relative py-5">
+          <div class="nav-icons position-absolute top-50 start-50 translate-middle">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active px-2 link-secondary link-offset-2 link-underline-opacity-0 link-underline-opacity-0-hover" id="grid" data-bs-toggle="pill" data-bs-target="#pills-grid" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link px-2 link-secondary link-offset-2 link-underline-opacity-0 link-underline-opacity-0-hover" id="full-post" data-bs-toggle="pill" data-bs-target="#pills-full-post" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+          </li>
+        </ul>
+      </div>
+    </div>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-grid" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+            <div class="content">
+              <div class="row">
+                  <div class="col-4">
+                    <div class="img-container">
+                      <img class="img-fluid" src="./img/1.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="img-container">
+                      <img class="img-fluid" src="./img/2.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="img-container">
+                      <img class="img-fluid" src="./img/3.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              <div class="row">
+                <div class="col-4">
+                  <div class="img-container">
+                    <img class="img-fluid" src="./img/4.jpg" alt="">
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="img-container">
+                    <img class="img-fluid" src="./img/5.jpg" alt="">
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="img-container">
+                    <img class="img-fluid" src="./img/6.jpg" alt="">
+                  </div>
+                </div>
+              </div>
             <div class="row">
-                <div class="col-4">
-                  <div class="img-container">
-                    <img class="img-fluid" src="./img/1.jpg" alt="">
-                  </div>
+              <div class="col-4">
+                <div class="img-container">
+                  <img class="img-fluid" src="./img/7.jpg" alt="">
                 </div>
-                <div class="col-4">
-                  <div class="img-container">
-                    <img class="img-fluid" src="./img/2.jpg" alt="">
-                  </div>
+              </div>
+              <div class="col-4">
+                <div class="img-container">
+                  <img class="img-fluid" src="./img/8.jpg" alt="">
                 </div>
-                <div class="col-4">
-                  <div class="img-container">
-                    <img class="img-fluid" src="./img/3.jpg" alt="">
-                  </div>
+              </div>
+              <div class="col-4">
+                <div class="img-container">
+                  <img class="img-fluid" src="./img/9.jpg" alt="">
                 </div>
+              </div>
             </div>
-            <div class="row">
-              <div class="col-4">
-                <div class="img-container">
-                  <img class="img-fluid" src="./img/4.jpg" alt="">
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="img-container">
-                  <img class="img-fluid" src="./img/5.jpg" alt="">
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="img-container">
-                  <img class="img-fluid" src="./img/6.jpg" alt="">
-                </div>
-              </div>
           </div>
-          <div class="row">
-            <div class="col-4">
-              <div class="img-container">
-                <img class="img-fluid" src="./img/7.jpg" alt="">
+          </div>
+          <div class="tab-pane fade" id="pills-full-post" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+            <div class="container">
+              <div class="row py-2">
+                <div class="col-8 mx-auto border border-secondary-subtle">
+                  <div class="post-header">
+                    <h2>My Crazy dog Spark!</h2>
+                    <p><strong>08/03</strong></p>
+                  </div>
+                  <div class="post-content">
+                    <img src="./img/1.jpg" alt="">
+                  </div>
+                  <div class="post-footer mt-2">
+                    <p><strong>204 Likes</strong><br />
+                    This is an example of a very good photo that you can post on instagram</p>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="col-4">
-              <div class="img-container">
-                <img class="img-fluid" src="./img/8.jpg" alt="">
+              <div class="row py-2">
+                <div class="col-8 mx-auto border border-secondary-subtle">
+                  <div class="post-header">
+                    <h2>Learn together as a team</h2>
+                    <p><strong>12/24</strong></p>
+                  </div>
+                  <div class="post-content">
+                    <img src="./img/2.jpg" alt="">
+                  </div>
+                  <div class="post-footer mt-2">
+                    <p><strong>25147 Likes</strong><br />
+                    This is an example of a very good photo that you can post on instagram</p>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="col-4">
-              <div class="img-container">
-                <img class="img-fluid" src="./img/9.jpg" alt="">
+              <div class="row py-2">
+                <div class="col-8 mx-auto border border-secondary-subtle">
+                  <div class="post-header">
+                    <h2>The greatness of Croatia</h2>
+                    <p><strong>04/09</strong></p>
+                  </div>
+                  <div class="post-content">
+                    <img src="./img/3.jpg" alt="">
+                  </div>
+                  <div class="post-footer mt-2">
+                    <p><strong>26985 Likes</strong><br />
+                    This is an example of a very good photo that you can post on instagram</p>
+                  </div>
+                </div>
               </div>
+              <div class="row py-2">
+                <div class="col-8 mx-auto border border-secondary-subtle">
+                  <div class="post-header">
+                    <h2>Never forget to smile</h2>
+                    <p><strong>07/17</strong></p>
+                  </div>
+                  <div class="post-content">
+                    <img src="./img/4.jpg" alt="">
+                  </div>
+                  <div class="post-footer mt-2">
+                    <p><strong>12345 Likes</strong><br />
+                    This is an example of a very good photo that you can post on instagram</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row py-2">
+                <div class="col-8 mx-auto border border-secondary-subtle">
+                  <div class="post-header">
+                    <h2>A tower like no other</h2>
+                    <p><strong>07/12</strong></p>
+                  </div>
+                  <div class="post-content">
+                    <img src="./img/5.jpg" alt="">
+                  </div>
+                  <div class="post-footer mt-2">
+                    <p><strong>12 Likes</strong><br />
+                    This is an example of a very good photo that you can post on instagram</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row py-2">
+                <div class="col-8 mx-auto border border-secondary-subtle">
+                  <div class="post-header">
+                    <h2>Amazing GOAL by Cristiano!</h2>
+                    <p><strong>06/10</strong></p>
+                  </div>
+                  <div class="post-content">
+                    <img src="./img/6.jpg" alt="">
+                  </div>
+                  <div class="post-footer mt-2">
+                    <p><strong>204 Likes</strong><br />
+                    This is an example of a very good photo that you can post on instagram</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row py-2">
+                <div class="col-8 mx-auto border border-secondary-subtle">
+                  <div class="post-header">
+                    <h2>What matters the most</h2>
+                    <p><strong>07/19</strong></p>
+                  </div>
+                  <div class="post-content">
+                    <img src="./img/7.jpg" alt="">
+                  </div>
+                  <div class="post-footer mt-2">
+                    <p><strong>26545 Likes</strong><br />
+                    This is an example of a very good photo that you can post on instagram</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row py-2">
+                <div class="col-8 mx-auto border border-secondary-subtle">
+                  <div class="post-header">
+                    <h2>The future is now, 4GeeksAcademy Bootcamp rules!</h2>
+                    <p><strong>08/24</strong></p>
+                  </div>
+                  <div class="post-content">
+                    <img src="./img/8.jpg" alt="">
+                  </div>
+                  <div class="post-footer mt-2">
+                    <p><strong><i class="fa-solid fa-infinity"></i> Likes</strong><br />
+                    This is an example of a very good photo that you can post on instagram</p>
+                  </div>
+                </div>
+              </div>  
+              <div class="row py-2">
+                <div class="col-8 mx-auto border border-secondary-subtle">
+                  <div class="post-header">
+                    <h2>Learning at 4Geeks, a new excitement everyday!</h2>
+                    <p><strong>08/24</strong></p>
+                  </div>
+                  <div class="post-content">
+                    <img src="./img/9.jpg" alt="">
+                  </div>
+                  <div class="post-footer mt-2">
+                    <p><strong><i class="fa-solid fa-infinity"></i> Likes</strong><br />
+                    This is an example of a very good photo that you can post on instagram</p>
+                  </div>
+                </div>
+              </div> 
+
             </div>
-        </div>
+          </div>
         </div>
     </div>
     <!-- Modal -->
